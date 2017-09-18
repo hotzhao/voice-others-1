@@ -1,4 +1,4 @@
-#ifndef SIREN_H_
+﻿#ifndef SIREN_H_
 #define SIREN_H_
 
 #include <stdint.h>
@@ -124,21 +124,21 @@ enum {
 };
 
 enum {
-    SIREN_EVENT_VAD_START = 100,
-    SIREN_EVENT_VAD_DATA,
-    SIREN_EVENT_VAD_END,
-    SIREN_EVENT_VAD_CANCEL,
+    SIREN_EVENT_VAD_START = 100,    // 语音帧的开始
+    SIREN_EVENT_VAD_DATA,           // 携带语音信息
+    SIREN_EVENT_VAD_END,            // 语音帧结束
+    SIREN_EVENT_VAD_CANCEL,         // 误激活引发的cancel
     SIREN_EVENT_WAKE_VAD_START,
     SIREN_EVENT_WAKE_VAD_DATA,
     SIREN_EVENT_WAKE_VAD_END,
     SIREN_EVENT_WAKE_PRE,
-    SIREN_EVENT_WAKE_NOCMD,
-    SIREN_EVENT_WAKE_CMD,
-    SIREN_EVENT_WAKE_CANCEL,
-    SIREN_EVENT_SLEEP,
+    SIREN_EVENT_WAKE_NOCMD,         // 单独激活事件
+    SIREN_EVENT_WAKE_CMD,           // 以激活词开头，以其他语音结尾的混合激活事件，需要通过asr来进一步判断激活情况
+    SIREN_EVENT_WAKE_CANCEL,        // 可以本地判断的误激活事件
+    SIREN_EVENT_SLEEP,              // 睡眠激活词
     SIREN_EVENT_HOTWORD,
     SIREN_EVENT_SR,
-    SIREN_EVENT_VOICE_PRINT,
+    SIREN_EVENT_VOICE_PRINT,        // 声纹事件，包含声纹信息
     SIREN_EVENT_DIRTY
 };
 

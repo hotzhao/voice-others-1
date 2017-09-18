@@ -1,4 +1,4 @@
-#ifndef SIREN_CONFIG_IF_H_
+﻿#ifndef SIREN_CONFIG_IF_H_
 #define SIREN_CONFIG_IF_H_
 
 #include <stdint.h>
@@ -121,26 +121,26 @@ struct DefVTConfig {
 
 struct AlgConfig {
     std::string alg_legacy_dir;
-    std::vector<int> alg_rs_mics;
-    std::vector<int> alg_aec_mics;
-    std::vector<int> alg_aec_ref_mics;
-    std::vector<int> alg_aec_aff_cpus;
-    std::vector<int> alg_aec_mat_aff_cpus;
-    std::vector<int> alg_vad_mics;
+    std::vector<int> alg_rs_mics;                   // 降采样通道配置，数组形式，告知需要降采样的通道
+    std::vector<int> alg_aec_mics;                  // aec音频通道，数组形式，告知aec的音频数据通道
+    std::vector<int> alg_aec_ref_mics;              // 参考音源通道，数组形式，用来告知AEC算法哪些通道是参考通道
+    std::vector<int> alg_aec_aff_cpus;              // aec处理线程的亲和性
+    std::vector<int> alg_aec_mat_aff_cpus;          // aec矩阵运算的亲和性
+    std::vector<int> alg_vad_mics;                  // vad使用的音频通道，数组形式
     std::vector<int> alg_need_i2s_delay_mics;
     std::vector<double> alg_i2s_delay_mics;
-    std::vector<MicPos> alg_mic_pos;
-    std::vector<int> alg_sl_mics;
-    std::vector<int> alg_bf_mics;
+    std::vector<MicPos> alg_mic_pos;                // 所有麦克风的位置，每个位置由x,y,z三个double坐标描述
+    std::vector<int> alg_sl_mics;                   // 寻向使用的音频通道
+    std::vector<int> alg_bf_mics;                   // 波束成形使用的音频通道
     std::string alg_vt_config_file_path;
-    std::string alg_vt_phomod;
-    std::string alg_vt_dnnmod;
+    std::string alg_vt_phomod;                      // 存放音素对应表的绝对路径
+    std::string alg_vt_dnnmod;                      // 存放DNN模型的绝对路径
     std::vector<DefVTConfig> def_vt_configs;
 
-    int alg_lan;
+    int alg_lan;                                    // 当前语言配置，zh/en，默认zh，已废弃
    
     float alg_aec_shield = 200.0f;
-    float alg_raw_stream_sl_direction = 180.0f;
+    float alg_raw_stream_sl_direction = 180.0f;     // 裸数据流sl方向
     
     float alg_vad_baserange = 1.25f;
     float alg_vad_dynrange_min = 3.5f;
@@ -148,20 +148,20 @@ struct AlgConfig {
     float alg_bf_scaling = 1.0f;
 
     bool alg_use_legacy_ssp_config_file = true;
-    bool alg_aec = true;
-    bool alg_rs_delay_on_left_right_channel;
-    bool alg_raw_stream_bf = true;
-    bool alg_raw_stream_agc = true;
-    bool alg_vt_enable = true;
-    bool alg_vad_enable = true;
-    bool alg_opus_compress = false;
+    bool alg_aec = true;                            // 是否进行aec
+    bool alg_rs_delay_on_left_right_channel;        // 左右声道是否存在不一致的delay，常发生在i2s采集的情况上
+    bool alg_raw_stream_bf = true;                  // 裸数据流是否需要bf处理
+    bool alg_raw_stream_agc = true;                 // 裸数据是否需要agc处理
+    bool alg_vt_enable = true;                      // 是否需要vt事件
+    bool alg_vad_enable = true;                     // 是否需要vad事件，此事前端处理流程退化成raw stream
+    bool alg_opus_compress = false;                 // 是否输出opus编码后的语音
     bool alg_use_legacy_vt_config_file = true;
 };
 
 struct RawStreamConfig {
-    int raw_stream_channel_num = 1;
-    int raw_stream_sample_rate = 16000;
-    int raw_stream_byte = 2;
+    int raw_stream_channel_num = 1;                 // 裸音频流输出的通道数，默认为1
+    int raw_stream_sample_rate = 16000;             // 裸音频流输出的采样率，默认为16000
+    int raw_stream_byte = 2;                        // 裸音频输出的位宽，默认为2
 };
 
 struct DebugConfig {
@@ -179,18 +179,18 @@ struct DebugConfig {
 };
 
 struct SirenConfig {
-    int mic_num = 8;
-    int mic_channel_num = 8;
-    int mic_sample_rate = 48000;
-    int mic_audio_byte = 4;
-    int mic_frame_length = 10;
+    int mic_num = 8;                // 麦克风数目（包括AEC参考音源数目）
+    int mic_channel_num = 8;        // 麦克风通道数目（包括参考音源通道），一般情况下和mic_num相同
+    int mic_sample_rate = 48000;    // 麦克风音频采样率
+    int mic_audio_byte = 4;         // 麦克风音频位宽，一般取值为2（16位），4（32位）两种
+    int mic_frame_length = 10;      // 建议的每一语音帧的时长，建议语音帧长度为10ms
 
     bool siren_use_share_mem = false;
     unsigned long siren_recording_socket_wmem = 4 * 1024 * 1024;
     unsigned long siren_recording_socket_rmem = 6 * 1024 * 1024;
     
-    int siren_input_err_retry_num = 5;
-    int siren_input_err_retry_timeout = 100;
+    int siren_input_err_retry_num = 5;  // 输入音频流出错时重试的最大连续次数，已废弃
+    int siren_input_err_retry_timeout = 100; // 两次重试间间隔的时间，单位时毫秒，已废弃
 
     int udp_port;
 
