@@ -29,23 +29,23 @@ typedef void (*on_err_input_stream_t)(void *token);
 #define VT_TYPE_OTHER 4
 
 typedef struct {
-    float vt_block_avg_score;
-    float vt_block_min_score;
-    float vt_classify_shield;
+    float vt_block_avg_score;       // 所有phone声学平均得分门限
+    float vt_block_min_score;       // 单个phone声学最低得分门限
+    float vt_classify_shield;       // 本地激活二次确认门限
 
     bool vt_left_sil_det;
     bool vt_right_sil_det;
-    bool vt_remote_check_with_aec;
-    bool vt_remote_check_without_aec;
-    bool vt_local_classify_check;
+    bool vt_remote_check_with_aec;  // 是否在aec状态下进行远程asr确认，如果为true，则不会发出_nocmd类型事件
+    bool vt_remote_check_without_aec; // 是否在非aec状态下进行远程asr确认
+    bool vt_local_classify_check;   // 是否进行本地激活二次确认
     
-    std::string nnet_path;
+    std::string nnet_path;          // 激活词模型绝对路径
 } siren_vt_alg_config;
 
 typedef struct {
-    int vt_type;
-    std::string vt_word;
-    std::string vt_phone;
+    int vt_type;                    // 激活词类型，1是激活词，2是睡眠词，3是热词
+    std::string vt_word;            // 激活词，utf-8的汉字
+    std::string vt_phone;           // 激活词音素，拼音，假如激活词是“你好”，则这里填ni2hao3，声调轻声使用数字5
     bool use_default_config;
     siren_vt_alg_config alg_config;
 } siren_vt_word;
@@ -57,12 +57,12 @@ typedef struct {
     stop_input_stream_t stop_input;
     read_input_stream_t read_input;
     on_err_input_stream_t on_err_input;
-} siren_input_if_t;
+} siren_input_if_t;                    // 音频流输入回调函数集合
 
 typedef struct {
-    int start;
-    int end;
-    float energy;
+    int start;          // 在下面第一个SIREN_EVENT_VAD_DATA语音帧中激活词所在的开始，单位是float
+    int end;            // 语音帧中激活词结尾
+    float energy;       // 激活词的能量绝对值
 } vt_event_t;
 
 #define VOICE_MASK (0x1 << 0)
@@ -86,7 +86,11 @@ typedef struct {
 #define HAS_SL(flag) ((flag & SL_MASK) != 0)
 #define HAS_VT(flag) ((flag & VT_MASK) != 0)
 
+// 当发生特定语音事件时，siren会回掉该接口
+// @token: 通过init_siren传入的token
 typedef void (*on_voice_event_t)(void *token, voice_event_t *voice_event);
+
+
 typedef void (*on_net_event_t)(void *token, char *data, int len);
 
 typedef struct {
@@ -117,9 +121,9 @@ enum {
 };
 
 enum {
-    SIREN_VT_OK = 0,
-    SIREN_VT_DUP,
-    SIREN_VT_ERROR,
+    SIREN_VT_OK = 0,                // 成功添加激活词
+    SIREN_VT_DUP,                   // 激活词已经存在
+    SIREN_VT_ERROR,                 // 添加激活词失败
     SIREN_VT_NO_EXIT
 };
 
@@ -143,26 +147,52 @@ enum {
 };
 
 enum {
-    SIREN_STATE_AWAKE =1 ,
-    SIREN_STATE_SLEEP
+    SIREN_STATE_AWAKE =1 ,          // 激活
+    SIREN_STATE_SLEEP               // 睡眠
 };
 
+// @token: 将在后续回调方法中被调用
+// @path:  JSON配置文件所在的本地文件绝对地址
+// @input: 音频流输入回调函数集合
+//
+// @returns: siren对象的句柄
 siren_t init_siren(void *token, const char *path, siren_input_if_t *input);
+
+// 打开语音处理流，此时siren将源源不断的从siren_input_if_t提供的输入接口中读取音频数据，
+// 直到stop_siren_process_stream或stop_siren_stream被调用
 siren_t start_siren_process_stream(siren_t siren, siren_proc_callback_t *callback);
+
+// 打开裸数据流，此时siren将源源不断的从siren_input_if_t提供的输入接口中读取音频数据，
+// 直到stop_siren_raw_stream或stop_siren_stream被调用
 siren_t start_siren_raw_stream(siren_t siren, siren_raw_stream_callback_t *callback);
 
+// 关闭数据处理音频流，如果此时没有打开裸数据音频流，那么将调用siren_input_if_t的stop_stream方法
 void stop_siren_process_stream(siren_t siren);
+
+// 关闭裸数据音频流，如果此时没有打开语音处理音频流，那么将调用siren_input_if_t的stop_stream方法
 void stop_siren_raw_stream(siren_t siren);
+
+// 强制关闭音频流，将调用siren_input_if_t的stop_stream方法
 void stop_siren_stream(siren_t siren);
 
+// 强制设置siren的激活/睡眠状态
+// @state: SIREN_STATE_AWAKE or SIREN_STATE_SLEEP
+// @callback: 如果不是NULL则调用为异步，否则为同步，异步调用会在完成时调用callback接口
 void set_siren_state(siren_t siren, siren_state_t state, siren_state_changed_callback_t *callback);
+
+// 强制设置水平和垂直寻向角度
+// @ho:  水平角度
+// @ver: 垂直角度
 void set_siren_steer(siren_t siren, float ho, float ver);
 
 void destroy_siren(siren_t siren);
 
+// 添加唤醒激活词
+// @return: SIREN_VT_OK, SIREN_VT_DUP, SIREN_VT_ERROR
 siren_vt_t add_vt_word(siren_t siren, siren_vt_word *word, bool use_default_config);
 siren_vt_t remove_vt_word(siren_t siren, const char *word);
 
+// 查询所有激活词
 int get_vt_word(siren_t siren, siren_vt_word **words);
 
 
