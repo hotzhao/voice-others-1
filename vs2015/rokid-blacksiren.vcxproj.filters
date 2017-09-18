@@ -1,0 +1,2238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{df486874-34c6-4f67-b579-e00394f3db51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{04f6187c-7435-4681-b5fa-53e8ec426b9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{8042e00e-506d-47c9-84e2-f5c87e13dd16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\legacy">
+      <UniqueIdentifier>{35ebe2e6-270a-4e07-940a-19a954cabb90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\neo">
+      <UniqueIdentifier>{a6f49fbc-18dc-49de-a250-3aabe05e01a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\legacy">
+      <UniqueIdentifier>{3532f2a6-779e-4e7d-beef-4512d981a6ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\neo">
+      <UniqueIdentifier>{4cbc9629-b00a-4c85-b896-20c628e65885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\support">
+      <UniqueIdentifier>{d2b0e86d-9fd7-42bc-b2f1-5c7bac4f2e4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\support\include">
+      <UniqueIdentifier>{5c7460ea-8640-4365-b2c3-0c7c3515e6cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\support\include\blis">
+      <UniqueIdentifier>{9e8f9ac4-0023-47f2-8a2c-e2e5d467535f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\support\include\opus">
+      <UniqueIdentifier>{b78b81fc-2827-455a-9655-97d75a0f1ad5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\support\include\tensorflow">
+      <UniqueIdentifier>{dbd053b2-0593-460e-8d8d-1d5c45f53089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\support\include\tensorflow\c">
+      <UniqueIdentifier>{01b2c7f5-14a8-43f6-9bea-5eaf5be0644c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\common.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\isiren.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\lfqueue.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\os.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\phoneme.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\siren.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\siren_alg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\siren_alg_legacy_helper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\siren_base.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\siren_channel.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\siren_config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\siren_config_if.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\siren_net.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\siren_preprocessor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\siren_processor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\siren_proxy.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sutils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2ad1.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2ad2.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2ad3.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2math.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2mem_aec.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2mem_agc.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2mem_bf.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2mem_buff.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2mem_cod.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2mem_i.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2mem_o.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2mem_rdc.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2mem_rs2.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2mem_vad2.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\r2mem_vbv3.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\zrsapi.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\zvbvapi.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\legacy\zvtapi.h">
+      <Filter>include\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\neo\siren_mic.h">
+      <Filter>include\neo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_amax.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_asum.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_axpy.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_c_abs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_c_div.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_copy.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_d_abs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_d_cnjg.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_d_imag.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_d_sign.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_dot.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_f__cabs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_gbmv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_gemm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_gemm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_gemv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_gemv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_ger.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_ger_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hbmv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hemm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hemm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hemv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hemv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_her.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_her_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_her2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_her2_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_her2k.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_her2k_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_herk.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_herk_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hpmv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hpr.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hpr2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_lsame.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_nrm2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_r_abs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_r_cnjg.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_r_imag.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_r_sign.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_rot.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_rotg.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_rotm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_rotmg.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_sbmv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_scal.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_spmv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_spr.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_spr2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_swap.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_symm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_symm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_symv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_symv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syr.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syr_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syr2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syr2_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syr2k.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syr2k_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syrk.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syrk_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_tbmv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_tbsv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_tpmv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_tpsv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trmm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trmm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trmv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trmv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trsm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trsm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trsv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trsv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_xerbla.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_z_abs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_z_div.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_absq2ris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_absq2s.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_absqsc.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_absqsc_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_absqsc_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_abval2ris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_abval2s.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_add3ris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_add3s.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addd.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addd_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addd_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addjris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addjs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addm_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_adds.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_adds_mxn.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_adds_mxn_uplo.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addsc.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addsc_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addsc_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addv_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addv_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_amaxv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_amaxv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_amaxv_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_asumv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_asumv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_asumv_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_auxinfo_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axmyris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axmys.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpbyris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpy2v.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpy2v_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpy2v_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpy2v_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyd.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyd_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyd_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyf.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyf_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyf_fusefac.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyf_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyf_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyjris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyjs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpym.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpym_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpym_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpys.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyv_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyv_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_blas.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_blas_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_blocksize.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_bsv_query.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_cast.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_cblas.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_clock.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_cntl_init.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_complex_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_config.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_conjris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_conjs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_constants.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copycjris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copycjs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyd.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyd_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyd_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyjri3s.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyjris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyjs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copym.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copym_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copym_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyri3s.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copys.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copys_mxn.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copysc.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copysc_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copysc_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyv_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyv_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_divsc.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_divsc_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_divsc_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dlamch.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotaxpyv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotaxpyv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotaxpyv_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotaxpyv_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotjs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dots.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotv_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotv_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxaxpyf.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxaxpyf_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxaxpyf_fusefac.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxaxpyf_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxaxpyf_ref_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxaxpyf_ref_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxf.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxf_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxf_fusefac.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxf_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxf_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxv_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxv_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_eq.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_eqris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_error.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_error_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_extern_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_f2c.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_flops.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_fprintm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_fprintm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_fprints.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_fprintv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_fprintv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_func.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_blk_var1f.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_blk_var2f.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_blk_var3f.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_blocksize.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_front.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_ker_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_ker_var3.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_threading.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_ukernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_ukr_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemmind_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemmind_ukr_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemmtrsm_l_ukr_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemmtrsm_u_ukr_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemmtrsm_ukernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemmtrsmind_x_ukr_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_blk_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_blk_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_unb_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_unf_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_unf_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_genarray_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gentfunc_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gentprot_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger_blk_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger_blk_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger_unb_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_getopt.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gets.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_getsc.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_getsc_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemm_front.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_blk_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_blk_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_blk_var3.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_blk_var4.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unb_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unb_var3.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unb_var4.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unf_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unf_var1a.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unf_var3.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unf_var3a.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her_blk_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her_blk_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her_unb_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_blk_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_blk_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_blk_var3.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_blk_var4.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_unb_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_unb_var3.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_unb_var4.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_unf_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_unf_var4.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2k.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2k_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2k_front.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_blk_var1f.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_blk_var2f.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_blk_var3f.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_front.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_l_ker_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_threading.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_u_ker_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ind.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ind_cntl_init.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ind_query.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_info.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_init.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertd.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertd_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertd_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_inverts.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertv_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertv_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invscaljris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invscaljs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invscalris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invscals.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_3m1_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_3mh_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_4m1_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_4mb_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_4mh_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_ind_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_post_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_pre_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_prototypes.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_type_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_level3_type_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_lsame.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_machval.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_malloc.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mem.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mem_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mem_pool_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mkherm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mkherm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mkherm_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mksymm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mksymm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mksymm_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mktrim.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mktrim_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mktrim_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mulsc.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mulsc_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mulsc_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_neg2ris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_neg2s.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_norm1m.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_norm1m_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_norm1m_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_norm1v.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_norm1v_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_norm1v_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfm_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfsc.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfsc_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfsc_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfv_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normim.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normim_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normim_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normiv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normiv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normiv_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_oapi_ind.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_obj.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_obj_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_obj_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_obj_scalar.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_opid.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_3mi_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_4mi_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_blk_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_blk_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_cxk.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_cxk_3mi.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_cxk_4mi.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_cxk_rih.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_init.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_part.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_ref_cxk.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_ref_cxk_3mi.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_ref_cxk_4mi.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_ref_cxk_rih.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_rih_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_struc_cxk.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_struc_cxk_3mi.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_struc_cxk_4mi.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_struc_cxk_rih.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_threading.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packv_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packv_init.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packv_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packv_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_param_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_param_map.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_part.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_part_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_pool_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_printm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_printv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_query.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_randm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_randm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_randm_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_rands.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_randv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_randv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_randv_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2d.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2d_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2d_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2ios.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2jios.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2jri3s.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2jris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2jros.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2jrpis.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2js.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2m.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2m_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2m_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2ri3s.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2rihs_mxn_diag.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2rihs_mxn_uplo.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2ris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2ros.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2rpis.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2s.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2v.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2v_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2v_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2v_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalar_macro_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalcjris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalcjs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scald.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scald_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scald_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scaljris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scaljs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalm_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalm_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalm_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalris_mxn_uplo.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scals.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalv_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalv_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalv_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalv_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_set0ris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_set0s.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_set0s_mxn.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_set1s.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setd.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setd_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setd_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_seti0s.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setid.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setid_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setid_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setis.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setm_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setrihs_mxn_diag.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setrs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sets.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setsc.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setsc_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setv_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setv_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_slamch.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sqrt2ris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sqrt2s.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sqrtsc.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sqrtsc_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sqrtsc_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subd.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subd_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subd_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subjris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subjs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subm_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subsc.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subsc_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subsc_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subv_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subv_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sumsqv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sumsqv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sumsqv_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_swapris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_swaps.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_swapv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_swapv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_swapv_kernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_swapv_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_symm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_symm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_symm_front.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_symv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_symv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syr.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syr_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syr2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syr2_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syr2k.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syr2k_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syr2k_front.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syrk.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syrk_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syrk_front.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_system.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_tapi_ind.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_threading.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_threading_omp.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_threading_pthreads.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_blk_var1f.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_blk_var2b.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_blk_var2f.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_blk_var3b.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_blk_var3f.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_blocksize.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_front.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_ll_ker_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_lu_ker_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_rl_ker_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_ru_ker_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_threading.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm3.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm3_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm3_front.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_l_blk_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_l_blk_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_u_blk_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_u_blk_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_unb_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_unf_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_unf_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_blk_var1b.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_blk_var1f.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_blk_var2b.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_blk_var2f.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_blk_var3b.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_blk_var3f.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_blocksize.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_front.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_l_ukr_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_ll_ker_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_lu_ker_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_rl_ker_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_ru_ker_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_threading.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_u_ukr_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_ukernel.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsmind_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsmind_x_ukr_ref.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_l_blk_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_l_blk_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_u_blk_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_u_blk_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_unb_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_unf_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_unf_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_type_defs.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ukr_query.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm_blk_var2.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm_cxk.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm_ref_cxk.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackv.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackv_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackv_cntl.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackv_int.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackv_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unzipsc.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unzipsc_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unzipsc_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_xpbyris.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_xpbys.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_xpbys_mxn.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_xpbys_mxn_uplo.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_zipsc.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_zipsc_check.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_zipsc_unb_var1.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\blis.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\cblas.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\cblas_f77.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\f77_amax_sub.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\f77_asum_sub.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\f77_dot_sub.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\blis\f77_nrm2_sub.h">
+      <Filter>thirdparty\support\include\blis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\opus\opus.h">
+      <Filter>thirdparty\support\include\opus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\opus\opus_defines.h">
+      <Filter>thirdparty\support\include\opus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\opus\opus_multistream.h">
+      <Filter>thirdparty\support\include\opus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\opus\opus_types.h">
+      <Filter>thirdparty\support\include\opus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\tensorflow\c\c_api.h">
+      <Filter>thirdparty\support\include\tensorflow\c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\fftw3.h">
+      <Filter>thirdparty\support\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\NNVadIntf.h">
+      <Filter>thirdparty\support\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\r2mvdrapi.h">
+      <Filter>thirdparty\support\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\support\include\r2ssp.h">
+      <Filter>thirdparty\support\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\lfqueue.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\os_unix.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\siren.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\siren_alg.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\siren_base.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\siren_channel.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\siren_config.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\siren_net.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\siren_preprocessor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\siren_processor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\siren_proxy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sutils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\legacy\r2math.cpp">
+      <Filter>src\legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\legacy\r2mem_aec.cpp">
+      <Filter>src\legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\legacy\r2mem_agc.cpp">
+      <Filter>src\legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\legacy\r2mem_bf.cpp">
+      <Filter>src\legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\legacy\r2mem_buff.cpp">
+      <Filter>src\legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\legacy\r2mem_cod.cpp">
+      <Filter>src\legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\legacy\r2mem_i.cpp">
+      <Filter>src\legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\legacy\r2mem_o.cpp">
+      <Filter>src\legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\legacy\r2mem_rdc.cpp">
+      <Filter>src\legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\legacy\r2mem_rs2.cpp">
+      <Filter>src\legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\legacy\r2mem_vad2.cpp">
+      <Filter>src\legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\legacy\r2mem_vbv3.cpp">
+      <Filter>src\legacy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\neo\siren_mic.cpp">
+      <Filter>src\neo</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

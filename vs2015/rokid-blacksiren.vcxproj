@@ -1,0 +1,885 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6619D630-2D4F-457A-940B-E6115876A1E1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>rokidblacksiren</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\thirdparty\support\include;$(SolutionDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\thirdparty\support\include;$(SolutionDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\thirdparty\support\include;$(SolutionDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\thirdparty\support\include;$(SolutionDir)..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\common.h" />
+    <ClInclude Include="..\include\isiren.h" />
+    <ClInclude Include="..\include\legacy\r2ad1.h" />
+    <ClInclude Include="..\include\legacy\r2ad2.h" />
+    <ClInclude Include="..\include\legacy\r2ad3.h" />
+    <ClInclude Include="..\include\legacy\r2math.h" />
+    <ClInclude Include="..\include\legacy\r2mem_aec.h" />
+    <ClInclude Include="..\include\legacy\r2mem_agc.h" />
+    <ClInclude Include="..\include\legacy\r2mem_bf.h" />
+    <ClInclude Include="..\include\legacy\r2mem_buff.h" />
+    <ClInclude Include="..\include\legacy\r2mem_cod.h" />
+    <ClInclude Include="..\include\legacy\r2mem_i.h" />
+    <ClInclude Include="..\include\legacy\r2mem_o.h" />
+    <ClInclude Include="..\include\legacy\r2mem_rdc.h" />
+    <ClInclude Include="..\include\legacy\r2mem_rs2.h" />
+    <ClInclude Include="..\include\legacy\r2mem_vad2.h" />
+    <ClInclude Include="..\include\legacy\r2mem_vbv3.h" />
+    <ClInclude Include="..\include\legacy\zrsapi.h" />
+    <ClInclude Include="..\include\legacy\zvbvapi.h" />
+    <ClInclude Include="..\include\legacy\zvtapi.h" />
+    <ClInclude Include="..\include\lfqueue.h" />
+    <ClInclude Include="..\include\neo\siren_mic.h" />
+    <ClInclude Include="..\include\os.h" />
+    <ClInclude Include="..\include\phoneme.h" />
+    <ClInclude Include="..\include\siren.h" />
+    <ClInclude Include="..\include\siren_alg.h" />
+    <ClInclude Include="..\include\siren_alg_legacy_helper.h" />
+    <ClInclude Include="..\include\siren_base.h" />
+    <ClInclude Include="..\include\siren_channel.h" />
+    <ClInclude Include="..\include\siren_config.h" />
+    <ClInclude Include="..\include\siren_config_if.h" />
+    <ClInclude Include="..\include\siren_net.h" />
+    <ClInclude Include="..\include\siren_preprocessor.h" />
+    <ClInclude Include="..\include\siren_processor.h" />
+    <ClInclude Include="..\include\siren_proxy.h" />
+    <ClInclude Include="..\include\sutils.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_amax.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_asum.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_axpy.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_copy.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_c_abs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_c_div.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_dot.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_d_abs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_d_cnjg.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_d_imag.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_d_sign.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_f__cabs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_gbmv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_gemm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_gemm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_gemv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_gemv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_ger.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_ger_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hbmv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hemm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hemm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hemv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hemv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_her.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_her2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_her2k.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_her2k_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_her2_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_herk.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_herk_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_her_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hpmv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hpr.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_hpr2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_lsame.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_nrm2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_rot.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_rotg.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_rotm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_rotmg.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_r_abs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_r_cnjg.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_r_imag.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_r_sign.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_sbmv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_scal.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_spmv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_spr.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_spr2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_swap.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_symm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_symm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_symv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_symv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syr.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syr2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syr2k.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syr2k_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syr2_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syrk.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syrk_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_syr_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_tbmv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_tbsv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_tpmv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_tpsv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trmm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trmm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trmv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trmv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trsm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trsm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trsv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_trsv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_xerbla.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_z_abs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bla_z_div.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\blis.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_absq2ris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_absq2s.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_absqsc.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_absqsc_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_absqsc_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_abval2ris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_abval2s.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_add3ris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_add3s.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addd.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addd_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addd_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addjris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addjs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addm_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_adds.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addsc.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addsc_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addsc_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_adds_mxn.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_adds_mxn_uplo.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addv_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_addv_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_amaxv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_amaxv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_amaxv_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_asumv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_asumv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_asumv_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_auxinfo_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axmyris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axmys.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpbyris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpy2v.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpy2v_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpy2v_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpy2v_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyd.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyd_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyd_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyf.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyf_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyf_fusefac.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyf_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyf_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyjris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyjs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpym.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpym_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpym_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpys.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyv_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_axpyv_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_blas.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_blas_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_blocksize.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_bsv_query.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_cast.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_cblas.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_clock.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_cntl_init.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_complex_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_config.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_conjris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_conjs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_constants.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copycjris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copycjs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyd.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyd_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyd_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyjri3s.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyjris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyjs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copym.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copym_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copym_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyri3s.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copys.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copysc.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copysc_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copysc_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copys_mxn.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyv_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_copyv_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_divsc.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_divsc_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_divsc_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dlamch.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotaxpyv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotaxpyv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotaxpyv_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotaxpyv_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotjs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dots.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotv_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotv_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxaxpyf.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxaxpyf_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxaxpyf_fusefac.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxaxpyf_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxaxpyf_ref_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxaxpyf_ref_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxf.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxf_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxf_fusefac.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxf_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxf_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxv_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_dotxv_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_eq.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_eqris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_error.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_error_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_extern_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_f2c.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_flops.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_fprintm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_fprintm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_fprints.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_fprintv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_fprintv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_func.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemmind_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemmind_ukr_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemmtrsmind_x_ukr_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemmtrsm_l_ukr_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemmtrsm_ukernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemmtrsm_u_ukr_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_blk_var1f.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_blk_var2f.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_blk_var3f.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_blocksize.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_front.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_ker_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_ker_var3.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_threading.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_ukernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemm_ukr_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_blk_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_blk_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_unb_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_unf_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gemv_unf_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_genarray_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gentfunc_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gentprot_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger_blk_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger_blk_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ger_unb_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_getopt.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_gets.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_getsc.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_getsc_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemm_front.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_blk_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_blk_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_blk_var3.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_blk_var4.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unb_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unb_var3.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unb_var4.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unf_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unf_var1a.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unf_var3.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_hemv_unf_var3a.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2k.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2k_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2k_front.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_blk_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_blk_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_blk_var3.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_blk_var4.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_unb_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_unb_var3.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_unb_var4.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_unf_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her2_unf_var4.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_blk_var1f.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_blk_var2f.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_blk_var3f.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_front.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_l_ker_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_threading.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_herk_u_ker_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her_blk_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her_blk_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_her_unb_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ind.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ind_cntl_init.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ind_query.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_info.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_init.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertd.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertd_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertd_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_inverts.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertv_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invertv_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invscaljris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invscaljs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invscalris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_invscals.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_3m1_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_3mh_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_4m1_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_4mb_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_4mh_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_ind_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_post_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_pre_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_prototypes.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_kernel_type_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_level3_type_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_lsame.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_machval.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_malloc.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mem.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mem_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mem_pool_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mkherm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mkherm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mkherm_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mksymm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mksymm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mksymm_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mktrim.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mktrim_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mktrim_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mulsc.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mulsc_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_mulsc_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_neg2ris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_neg2s.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_norm1m.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_norm1m_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_norm1m_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_norm1v.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_norm1v_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_norm1v_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfm_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfsc.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfsc_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfsc_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normfv_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normim.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normim_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normim_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normiv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normiv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_normiv_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_oapi_ind.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_obj.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_obj_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_obj_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_obj_scalar.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_opid.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_3mi_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_4mi_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_blk_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_blk_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_cxk.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_cxk_3mi.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_cxk_4mi.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_cxk_rih.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_init.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_part.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_ref_cxk.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_ref_cxk_3mi.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_ref_cxk_4mi.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_ref_cxk_rih.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_rih_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_struc_cxk.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_struc_cxk_3mi.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_struc_cxk_4mi.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_struc_cxk_rih.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_threading.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packm_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packv_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packv_init.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packv_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_packv_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_param_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_param_map.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_part.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_part_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_pool_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_printm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_printv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_query.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_randm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_randm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_randm_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_rands.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_randv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_randv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_randv_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2d.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2d_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2d_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2ios.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2jios.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2jri3s.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2jris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2jros.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2jrpis.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2js.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2m.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2m_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2m_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2ri3s.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2rihs_mxn_diag.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2rihs_mxn_uplo.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2ris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2ros.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2rpis.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2s.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2v.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2v_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2v_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scal2v_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalar_macro_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalcjris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalcjs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scald.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scald_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scald_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scaljris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scaljs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalm_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalm_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalm_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalris_mxn_uplo.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scals.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalv_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalv_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalv_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_scalv_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_set0ris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_set0s.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_set0s_mxn.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_set1s.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setd.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setd_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setd_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_seti0s.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setid.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setid_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setid_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setis.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setm_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setrihs_mxn_diag.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setrs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sets.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setsc.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setsc_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setv_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_setv_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_slamch.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sqrt2ris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sqrt2s.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sqrtsc.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sqrtsc_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sqrtsc_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subd.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subd_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subd_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subjris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subjs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subm_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subsc.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subsc_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subsc_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subv_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_subv_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sumsqv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sumsqv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_sumsqv_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_swapris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_swaps.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_swapv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_swapv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_swapv_kernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_swapv_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_symm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_symm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_symm_front.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_symv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_symv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syr.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syr2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syr2k.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syr2k_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syr2k_front.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syr2_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syrk.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syrk_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syrk_front.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_syr_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_system.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_tapi_ind.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_threading.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_threading_omp.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_threading_pthreads.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm3.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm3_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm3_front.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_blk_var1f.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_blk_var2b.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_blk_var2f.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_blk_var3b.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_blk_var3f.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_blocksize.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_front.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_ll_ker_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_lu_ker_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_rl_ker_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_ru_ker_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmm_threading.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_l_blk_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_l_blk_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_unb_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_unf_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_unf_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_u_blk_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trmv_u_blk_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsmind_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsmind_x_ukr_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_blk_var1b.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_blk_var1f.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_blk_var2b.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_blk_var2f.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_blk_var3b.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_blk_var3f.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_blocksize.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_front.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_ll_ker_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_lu_ker_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_l_ukr_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_rl_ker_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_ru_ker_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_threading.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_ukernel.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsm_u_ukr_ref.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_l_blk_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_l_blk_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_unb_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_unf_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_unf_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_u_blk_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_trsv_u_blk_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_type_defs.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_ukr_query.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm_blk_var2.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm_cxk.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm_ref_cxk.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackm_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackv.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackv_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackv_cntl.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackv_int.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unpackv_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unzipsc.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unzipsc_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_unzipsc_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_xpbyris.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_xpbys.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_xpbys_mxn.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_xpbys_mxn_uplo.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_zipsc.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_zipsc_check.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\bli_zipsc_unb_var1.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\cblas.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\cblas_f77.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\f77_amax_sub.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\f77_asum_sub.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\f77_dot_sub.h" />
+    <ClInclude Include="..\thirdparty\support\include\blis\f77_nrm2_sub.h" />
+    <ClInclude Include="..\thirdparty\support\include\fftw3.h" />
+    <ClInclude Include="..\thirdparty\support\include\NNVadIntf.h" />
+    <ClInclude Include="..\thirdparty\support\include\opus\opus.h" />
+    <ClInclude Include="..\thirdparty\support\include\opus\opus_defines.h" />
+    <ClInclude Include="..\thirdparty\support\include\opus\opus_multistream.h" />
+    <ClInclude Include="..\thirdparty\support\include\opus\opus_types.h" />
+    <ClInclude Include="..\thirdparty\support\include\r2mvdrapi.h" />
+    <ClInclude Include="..\thirdparty\support\include\r2ssp.h" />
+    <ClInclude Include="..\thirdparty\support\include\tensorflow\c\c_api.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\legacy\r2math.cpp" />
+    <ClCompile Include="..\src\legacy\r2mem_aec.cpp" />
+    <ClCompile Include="..\src\legacy\r2mem_agc.cpp" />
+    <ClCompile Include="..\src\legacy\r2mem_bf.cpp" />
+    <ClCompile Include="..\src\legacy\r2mem_buff.cpp" />
+    <ClCompile Include="..\src\legacy\r2mem_cod.cpp" />
+    <ClCompile Include="..\src\legacy\r2mem_i.cpp" />
+    <ClCompile Include="..\src\legacy\r2mem_o.cpp" />
+    <ClCompile Include="..\src\legacy\r2mem_rdc.cpp" />
+    <ClCompile Include="..\src\legacy\r2mem_rs2.cpp" />
+    <ClCompile Include="..\src\legacy\r2mem_vad2.cpp" />
+    <ClCompile Include="..\src\legacy\r2mem_vbv3.cpp" />
+    <ClCompile Include="..\src\lfqueue.cpp" />
+    <ClCompile Include="..\src\neo\siren_mic.cpp" />
+    <ClCompile Include="..\src\os_unix.cpp" />
+    <ClCompile Include="..\src\siren.cpp" />
+    <ClCompile Include="..\src\siren_alg.cpp" />
+    <ClCompile Include="..\src\siren_base.cpp" />
+    <ClCompile Include="..\src\siren_channel.cpp" />
+    <ClCompile Include="..\src\siren_config.cpp" />
+    <ClCompile Include="..\src\siren_net.cpp" />
+    <ClCompile Include="..\src\siren_preprocessor.cpp" />
+    <ClCompile Include="..\src\siren_processor.cpp" />
+    <ClCompile Include="..\src\siren_proxy.cpp" />
+    <ClCompile Include="..\src\sutils.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
