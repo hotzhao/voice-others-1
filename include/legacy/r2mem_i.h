@@ -1,4 +1,4 @@
-//
+﻿//
 //  r2mem_i.h
 //  r2ad
 //
@@ -38,6 +38,16 @@ public:
   
 public:
   int reset();
+
+  // 把输入音频转成浮点类型
+  // 每个采样点，多个麦克风的数据按顺序排列。所有采样点，按顺序排列。
+  // 对于不同类型的输入，归一化到浮点数时，乘以的系数不同。
+  //		r2_in_int_24: 1/4
+  //		r2_in_int_32: 1/1024
+  //
+  // 输出：
+  //		pData_Out，二维数组[mic count][sample count]
+  //		iLen_Out = sample count
   int process(char* pData_In, int iLen_In, float**& pData_Out, int& iLen_Out);
   
 public:

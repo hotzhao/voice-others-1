@@ -22,6 +22,10 @@ public:
   
 public:
   int reset();
+
+  // 输入：
+  //		pData_Out，二维数组[mic count][sample count]
+  //		iLen_Out = sample count
   int process(float** pData_In, int iLen_In, float**& pData_Out, int& iLen_Out);
   
 public:
