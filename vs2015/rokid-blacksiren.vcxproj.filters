@@ -40,6 +40,15 @@
     <Filter Include="thirdparty\support\include\tensorflow\c">
       <UniqueIdentifier>{01b2c7f5-14a8-43f6-9bea-5eaf5be0644c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="thirdparty\support\libs">
+      <UniqueIdentifier>{4d8aca59-721a-4853-b158-6c4ae71b7b25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\support\libs\android">
+      <UniqueIdentifier>{bf70993f-e357-472d-ad62-892f2ab76cf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\support\libs\android\hack">
+      <UniqueIdentifier>{77627d72-f931-4d32-81d7-4885b52489fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\common.h">
@@ -2234,5 +2243,22 @@
     <ClCompile Include="..\src\neo\siren_mic.cpp">
       <Filter>src\neo</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\thirdparty\support\libs\android\hack\libr2audio.txt">
+      <Filter>thirdparty\support\libs\android\hack</Filter>
+    </Text>
+    <Text Include="..\thirdparty\support\libs\android\hack\libr2mvdrbf.txt">
+      <Filter>thirdparty\support\libs\android\hack</Filter>
+    </Text>
+    <Text Include="..\thirdparty\support\libs\android\hack\libr2ssp.txt">
+      <Filter>thirdparty\support\libs\android\hack</Filter>
+    </Text>
+    <Text Include="..\thirdparty\support\libs\android\hack\libr2vt.txt">
+      <Filter>thirdparty\support\libs\android\hack</Filter>
+    </Text>
+    <Text Include="..\thirdparty\support\libs\android\hack\libztvad.txt">
+      <Filter>thirdparty\support\libs\android\hack</Filter>
+    </Text>
   </ItemGroup>
 </Project>

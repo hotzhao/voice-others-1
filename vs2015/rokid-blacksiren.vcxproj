@@ -879,6 +879,13 @@
     <ClCompile Include="..\src\siren_proxy.cpp" />
     <ClCompile Include="..\src\sutils.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\thirdparty\support\libs\android\hack\libr2audio.txt" />
+    <Text Include="..\thirdparty\support\libs\android\hack\libr2mvdrbf.txt" />
+    <Text Include="..\thirdparty\support\libs\android\hack\libr2ssp.txt" />
+    <Text Include="..\thirdparty\support\libs\android\hack\libr2vt.txt" />
+    <Text Include="..\thirdparty\support\libs\android\hack\libztvad.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
