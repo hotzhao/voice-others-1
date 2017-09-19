@@ -1,4 +1,4 @@
-#include "siren_preprocessor.h"
+﻿#include "siren_preprocessor.h"
 
 #include <fstream>
 
@@ -154,10 +154,21 @@ int SirenPreprocessorImpl::processData(char *pDataIn, int lenIn, char *& pData_o
     float** pData_mul = nullptr;
     int inLen_mul = 0;
 
+	// 24位或者32位，转换成float类型
+	// 输出：	inLen_mul为采样点个数
     unit.m_pMem_in->process(pDataIn, lenIn, pData_mul, inLen_mul);
 
+	// 重采样
+	//		源语音采样率：		3
+	//		目标语音采样率：		1
+	//		输出帧长：			160
+	//
+	// 输入的音频，采样率一般应该为48000采样点每秒，
+	// 对应一帧，10ms的时间，采样点为480个
+	// 然后按照3：1的比率进行重采样，输出的一帧有160个采样点，这样说得过去
     unit.m_pMem_rs->process(pData_mul, inLen_mul, pData_mul, inLen_mul);
 
+	// 没看明白这一步做什么的
     unit.m_pMem_rdc->process(pData_mul, inLen_mul);
 
     if (rsRecord) {

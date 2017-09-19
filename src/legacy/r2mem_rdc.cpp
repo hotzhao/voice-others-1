@@ -46,7 +46,7 @@ int r2mem_rdc::process(float** pData_In, int& iLen_In) {
 
     if (m_iCurLen < m_iMaxLen) {
         //Skip Aec Data
-#if 0
+		#if 0
         for (int i = 0 ; i < m_pMicInfo_AecRef->iMicNum ; i ++) {
             int iMicId = m_pMicInfo_AecRef->pMicIdLst[i];
             for (int j = 0 ; j < iLen_In ; j ++) {
@@ -57,12 +57,16 @@ int r2mem_rdc::process(float** pData_In, int& iLen_In) {
                 }
             }
         }
-#endif
+		#endif
 
+		// m_pMicInfo_Rdc 等价于 micinfo.m_pMicInfo_aec
         for (int i = 0 ; i < m_pMicInfo_Rdc->iMicNum ; i ++) {
             int iMicId = m_pMicInfo_Rdc->pMicIdLst[i];
             for (int j = 0 ; j < iCur ; j ++) {
+				// m_pRDc数组长度为aec麦克风个数
+				// m_pRDc把每个麦克风在这一帧中的振幅累加了起来？
                 m_pRDc[i] += pData_In[iMicId][j] ;
+				// m_pRDc_Var把每个麦克风在这一帧中的振幅的平方累加了起来
                 m_pRDc_Var[i] += pData_In[iMicId][j] * pData_In[iMicId][j] ;
             }
         }

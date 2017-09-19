@@ -12,7 +12,7 @@
 #include "zrsapi.h"
 #include "r2math.h"
 
-
+// rs应该是resample的缩写
 class r2mem_rs2
 {
 public:
@@ -25,7 +25,7 @@ public:
 
   // 输入：
   //		pData_Out，二维数组[mic count][sample count]
-  //		iLen_Out = sample count
+  //		iLen_Out = 采样点个数
   int process(float** pData_In, int iLen_In, float**& pData_Out, int& iLen_Out);
   
 public:
@@ -33,6 +33,7 @@ public:
   int m_iMicNum ;
   r2_mic_info* m_pMicInfo_Rs ;
   
+  // 48k/s -> 16k/s
   r2_rs_htask m_hRs_48_16 ;
   
   float** m_pData_Tmp ;
@@ -41,6 +42,7 @@ public:
   float ** m_pData_Out ;
   
   bool m_bDelay ;
+  // 48k/s -> 96k/s ?
   r2_rs_htask m_hRs_48_96 ;
   
   

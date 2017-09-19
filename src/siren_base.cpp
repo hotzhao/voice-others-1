@@ -43,9 +43,9 @@ SirenBase::SirenBase(SirenConfig &config_, int socket_, SirenSocketReader &reade
     int channels = config.mic_channel_num;
     int sample = config.mic_sample_rate;
     int byte = config.mic_audio_byte;
-    int frameLenInMs = 1000 / config.mic_frame_length;
+    int frameCountPerSecond = 1000 / config.mic_frame_length;
 
-    frameSize = channels * sample * byte / frameLenInMs;
+    frameSize = channels * sample * byte / frameCountPerSecond;
     frameBuffer = new char[frameSize];
 
     int rmem = config.siren_recording_socket_rmem;

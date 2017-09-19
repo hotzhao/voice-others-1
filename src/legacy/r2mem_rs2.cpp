@@ -17,6 +17,7 @@
     
     m_hRs_48_16 = r2_rs_create(m_pMicInfo_Rs->iMicNum, 3, 1, 160) ;
     
+	// 从目前的应用看，bDelay是false
     if (m_bDelay) {
       m_hRs_48_96 = r2_rs_create(m_pMicInfo_Rs->iMicNum, 1, 2, 960) ;
     }else{
